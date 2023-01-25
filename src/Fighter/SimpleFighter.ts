@@ -1,4 +1,4 @@
-interface SimpleFighter {
+export interface SimpleFighter {
   lifePoints: number;
   strength: number;
 

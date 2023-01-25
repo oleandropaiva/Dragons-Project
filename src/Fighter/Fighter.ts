@@ -4,8 +4,13 @@ import SimpleFighter from './SimpleFighter';
 interface Fighter extends SimpleFighter {
   lifePoints: number;
   strength: number;
+
   defense: number;
-  energy: Energy;
+  energy?: Energy;
+
+  special:(enemy: Fighter) => void;
+  levelUp(): void;
+  
 }
 
 export default Fighter;
